@@ -12,3 +12,6 @@ Manage shipments.
 Authenticated users.
 ### Payment API
 Accept payments.
+
+## TODOs
+Spring HATEOAS

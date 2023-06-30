@@ -1,5 +1,6 @@
 package com.example.onlinestore;
 
+import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -18,6 +19,7 @@ class ProductController {
     }
 
     @PostMapping("/products")
+    @ResponseStatus(code = HttpStatus.CREATED)
     Product newProduct(@RequestBody Product newProduct) {
         return repository.save(newProduct);
     }
