@@ -1,4 +1,4 @@
-package com.example.onlinestore;
+package com.example.overengineered;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

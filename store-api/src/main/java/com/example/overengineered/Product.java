@@ -1,4 +1,4 @@
-package com.example.onlinestore;
+package com.example.overengineered;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

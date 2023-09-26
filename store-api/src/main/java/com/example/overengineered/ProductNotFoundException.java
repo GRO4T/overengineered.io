@@ -1,4 +1,4 @@
-package com.example.onlinestore;
+package com.example.overengineered;
 
 public class ProductNotFoundException extends RuntimeException {
     public ProductNotFoundException(Long id) {

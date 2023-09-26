@@ -1,4 +1,4 @@
-package com.example.onlinestore;
+package com.example.overengineered;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ControllerAdvice;

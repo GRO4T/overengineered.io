@@ -1,4 +1,4 @@
-package com.example.onlinestore;
+package com.example.overengineered;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
