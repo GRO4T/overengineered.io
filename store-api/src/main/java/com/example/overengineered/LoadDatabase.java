@@ -16,6 +16,7 @@ class LoadDatabase {
         return args -> {
             log.info("Preloading " + repository.save(new Product("Laptop")));
             log.info("Preloading " + repository.save(new Product("Mouse")));
+            log.info("Preloading " + repository.save(new Product("Keyboard")));
         };
     }
 }
