@@ -25,6 +25,8 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 public class ProductControllerTests {
     private static Logger log = LoggerFactory.getLogger(ProductControllerTests.class);
 
+    private final String API_VERSION = "/api/v1";
+
     @Autowired
     private MockMvc mockMvc;
 
@@ -46,7 +48,7 @@ public class ProductControllerTests {
         when(productRepository.findAll()).thenReturn(products);
 
         // Act and Assert
-        this.mockMvc.perform(get("/products"))
+        this.mockMvc.perform(get(API_VERSION + "/product"))
                 .andExpect(status().isOk())
                 .andExpect(content().json(expectedResponseContent));
     }
@@ -58,7 +60,7 @@ public class ProductControllerTests {
         when(productRepository.save(newProduct)).thenReturn(newProduct);
 
         this.mockMvc.perform(MockMvcRequestBuilders
-                        .post("/products")
+                        .post(API_VERSION + "/product")
                         .content(asJsonString(newProduct))
                         .contentType(MediaType.APPLICATION_JSON)
                         .accept(MediaType.APPLICATION_JSON))
